@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car's Owner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                    </ul>
+                    <h1 class="h3 mx-auto">Edit Car & Owner</h1>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" id="search" placeholder="Search">
+                        <button class="btn btn-outline-primary" type="button" id="search-btn">
+                            <i class="fa-brands fa-searchengin"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div class="mt-4">
+            <div class="mb-3">
+                <label for="id" class="form-label">Car ID</label>
+                <input type="number" class="form-control" id="id" disabled>
+            </div>
+            <div class="mb-3">
+                <label for="owner_name" class="form-label">Owner's Name</label>
+                <input type="text" class="form-control" id="owner_name" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="owner_surname" class="form-label">Owner's Surname</label>
+                <input type="text" class="form-control" id="owner_surname" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="manufacturer" class="form-label">Manufacturer</label>
+                <input type="text" class="form-control" id="manufacturer" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="model" class="form-label">Model</label>
+                <input type="text" class="form-control" id="model" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="country" class="form-label">Country</label>
+                <input type="text" class="form-control" id="country" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="year" class="form-label">Year</label>
+                <input type="number" class="form-control" id="year" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="owner_phone" class="form-label">Owner's Phone</label>
+                <input type="tel" class="form-control" id="owner_phone" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="owner_email" class="form-label">Owner's Email</label>
+                <input type="email" class="form-control" id="owner_email" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="created_at" class="form-label">Created At</label>
+                <input type="text" class="form-control" id="created_at" disabled>
+            </div>
+            <div class="mb-3">
+                <label for="updated_at" class="form-label">Updated At</label>
+                <input type="text" class="form-control" id="updated_at" disabled>
+            </div>
+            <button type="button" class="btn btn-primary" id="save-btn">
+                <i class="fa-solid fa-floppy-disk"></i>
+                Save
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./search.js"></script>
+    <script src="./edit.js"></script>
+</body>
+
+</html>
